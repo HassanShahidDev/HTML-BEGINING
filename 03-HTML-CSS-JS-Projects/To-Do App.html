@@ -1,0 +1,38 @@
+<!--it is a simple Simple To-Do App-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo App</title>
+    <style>
+        body { font-family: Arial; width: 300px; margin: auto; }
+        li { margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h2>ToDo App</h2>
+    <input id="task" type="text">
+    <button onclick="add()">Add</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        function add() {
+            let val = document.getElementById("task").value;
+            if(val === "") return;
+
+            let li = document.createElement("li");
+            li.innerHTML = val;
+            document.getElementById("list").appendChild(li);
+
+            document.getElementById("task").value = "";
+        }
+    </script>
+</body>
+</html>

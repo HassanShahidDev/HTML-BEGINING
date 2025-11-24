@@ -1,0 +1,21 @@
+
+<!--it is  a Live Clock-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock</title>
+</head>
+<body>
+    <h2 id="clock"></h2>
+
+    <script>
+        setInterval(() => {
+            let d = new Date().toLocaleTimeString();
+            document.getElementById("clock").innerHTML = d;
+        }, 1000);
+    </script>
+</body>
+</html>
+

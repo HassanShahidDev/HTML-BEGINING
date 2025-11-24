@@ -1,0 +1,31 @@
+
+
+
+<!--it is a simple Digital Countdown Timer-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding-top: 40px; }
+        #timer { font-size: 40px; }
+    </style>
+</head>
+<body>
+    <h2>Countdown Timer (10 sec)</h2>
+    <h1 id="timer">10</h1>
+
+    <script>
+        let time = 10;
+        setInterval(() => {
+            if (time > 0) {
+                time--;
+                document.getElementById("timer").innerHTML = time;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!--Simple Calculator (Add Two Numbers)-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <input id="n1" type="number">
+    <input id="n2" type="number">
+    <button onclick="add()">Add</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function add() {
+            let a = Number(document.getElementById("n1").value);
+            let b = Number(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML = a + b;
+        }
+    </script>
+</body>
+</html>

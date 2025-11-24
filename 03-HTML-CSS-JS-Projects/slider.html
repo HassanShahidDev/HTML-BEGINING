@@ -1,0 +1,46 @@
+
+
+<!--it is a simple Image Slider app-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+    <style>
+        img { width: 300px; height: 200px; }
+        body { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <img id="pic" src="https://via.placeholder.com/300x200">
+
+    <br><br>
+    <button onclick="next()">Next</button>
+
+    <script>
+        let imgs = [
+            "https://via.placeholder.com/300x200/ff0000",
+            "https://via.placeholder.com/300x200/00ff00",
+            "https://via.placeholder.com/300x200/0000ff"
+        ];
+
+        let i = 0;
+
+        function next() {
+            i = (i + 1) % imgs.length;
+            document.getElementById("pic").src = imgs[i];
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
